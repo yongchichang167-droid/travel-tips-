@@ -1,0 +1,232 @@
+nav {
+  color: white;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 101, 192, 0.9),
+    rgba(21, 101, 192, 0.6),
+    rgba(21, 101, 192, 0)
+  );
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    font-size: 25px;
+    padding: 15px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    line-height: normal;
+    animation: fadeIn 0.8s ease-out forwards;
+
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    z-index: 9999;
+}
+.logo {
+    color: white;
+    font-size: 40px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left:20px;
+
+}
+nav ul{
+  display: flex;
+  gap:60px;
+  list-style:none;
+  align-items:center;
+  height:100%;
+}
+nav a{
+  display: flex;
+  color:white;
+  text-decoration: none;
+  align-items:center;
+}
+nav a:hover {
+    color:#4FC3F7;
+}
+body {
+    margin: 0;
+    background-color: #ADD2FF;
+}
+.col-auto{
+    color:black;
+}
+.login-btn {
+    background-color: #ffffff; 
+    color: #000000;              
+    padding: 12px 15px;
+    border-radius: 25px;         
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+
+}
+nav h1{
+  color: white;
+    font-size: 40px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin-left:20px;
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    scale:1;
+  }
+}
+.hero-1{
+    background-image: url('image/drink.image.png');
+    background-size: cover;      
+    background-position: center;
+    background-attachment: scroll; 
+    
+    height: 100vh;               
+    width: 25%;
+  
+    display:flex;
+    justify-content: center;    
+    align-items: center;       
+    
+    margin-top: 0;  
+}
+.overlay {
+    text-align: center;
+    color: white;
+    margin-top:120px;
+    font-size:45px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+h1{
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  font-family: "Marck Script", cursive;
+  font-weight: 300;
+  font-style: normal;
+  font-size:130px;
+
+}
+p{
+  font-family: "Marck Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+span{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.interactive-track{
+  display:flex;
+  width:400%;
+  transition:transform 0.6s ease-in-out;
+}
+.pre-btn, .next-btn{
+  padding:30px 30px;
+  position: absolute; 
+  top: 50%;  
+  transform: translateY(-50%); 
+  background:rgba(255, 255, 255, 0.5);
+  border:none;
+  border-radius: 50px;
+  cursor:pointer;
+  font-weight:bold;
+  font-size:30px;
+  display:flex;
+  line-height:1;
+}
+.pre-btn{
+  left:20px;
+  position:fixed;
+}
+.pre-btn:hover, .next-btn:hover{
+  color:#4FC3F7;
+  transform: translateY(-50%) scale(1.2);
+}
+.next-btn{
+  right:20px;
+  position:fixed;
+}
+.hero-2{
+  background-image: url('image/blue.drink.png');
+  background-size: cover;      
+  background-position: center;
+  background-attachment: scroll; 
+    
+  height: 100vh;               
+  width: 25%;
+  
+  display:flex;
+  justify-content: center;    
+  align-items: center;       
+    
+  margin-top: 0;   
+}
+.hero-3{
+  background-image: url('image/blue.milkshake.png');
+  width:25%;
+  background-size: cover;      
+  background-position: center;
+  background-attachment: scroll; 
+    
+  height: 100vh;         
+  
+  display:flex;
+  justify-content: center; 
+  align-items:center;   
+
+  margin-top: 0;   
+  content-visibility: auto; 
+}
+.hero-4{
+  background-image: url('image/blue_macarons.png');
+  width:25%;
+  background-size: cover;      
+  background-position: center;
+  background-attachment: scroll; 
+    
+  height: 100vh;         
+  
+  display:flex;
+  justify-content: center;    
+  align-items: center;       
+    
+  margin-top: 0; 
+  content-visibility: auto; 
+}
+
+
+
+
+
+
+
+

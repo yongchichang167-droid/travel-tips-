@@ -1,0 +1,250 @@
+nav {
+  color: white;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 101, 192, 0.9),
+    rgba(21, 101, 192, 0.6),
+    rgba(21, 101, 192, 0)
+  );
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    font-size: 25px;
+    padding: 15px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    line-height: normal;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.logo {
+    color: white;
+    font-size: 40px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin-left:20px;
+
+}
+nav ul{
+  display: flex;
+  gap:60px;
+  list-style:none;
+  align-items:center;
+  height:100%;
+}
+nav a{
+  display: flex;
+  color:white;
+  text-decoration: none;
+  align-items:center;
+}
+nav a:hover {
+    color:#4FC3F7;
+}
+body {
+    margin: 0;
+    background-color: #ADD2FF;
+}
+.col-auto{
+    color:black;
+}
+.login-btn {
+    background-color: #ffffff; 
+    color: #000000;              
+    padding: 12px 15px;
+    border-radius: 25px;         
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+
+}
+@keyframes slideIn {
+  0% {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+    scale:1;
+  }
+}
+.search-bar input {
+    border: 2px solid #1565C0;
+    border-radius: 20px;
+    padding: 8px 15px;
+    outline: none;
+    font-size:20px;
+}
+.search-bar button {
+    background-color: #1565C0;
+    color: white;
+    border-radius: 20px;
+    border: none;
+    padding: 8px 20px;
+    margin-left: 5px;
+    cursor: pointer;
+    font-size:20px;
+
+}
+.search-bar{
+  text-align:center;
+  margin-top:0;
+  
+  text-align:left;
+  
+   animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+h3{
+  f ont-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+}
+.search-row-container {
+    display: flex;         
+    justify-content: center; 
+    align-items: center;   
+    gap: 30px;              
+    margin-top: 150px;      
+    width: 100%;
+
+}
+h4{
+    font-family: "Newsreader", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:40px;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    color:white;
+    text-shadow: 3px 3px 0px #e3f2fd;
+    letter-spacing: 2px;
+    margin-top:70px;
+}
+.split-container {
+    display: flex;          
+    width: 100%;            
+    max-width: 1200px;      
+    margin: 50px auto;      
+    gap: 40px;              
+    align-items: center;    
+}
+.photo-box, .description-box {
+    transition:0.3; 
+    flex: 1;               
+    width: 50%;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.photo-box{
+	position: relative;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.1); 
+    backdrop-filter: blur(5px); 
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.photo-box img {
+   width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    filter: brightness(1.05) contrast(1.1);
+    transition: 0.6s ease;
+	overflow: hidden;
+}
+.photo-box:hover img {
+    transform: scale(1.05);
+    filter: brightness(1.1) contrast(1.2);
+}
+.description-box {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.2); 
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    font-size:20px;
+	transition: all 0.4s ease;
+
+}
+.description-box:hover{
+	border: 1px solid rgba(255, 255, 255, 0.5); 
+    transform: translateY(-5px); 
+}
+.detail-button{
+  background-color: #ffffff; 
+    color: #000000;              
+    padding: 15px 25px;
+    border-radius: 25px;         
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s; 
+    cursor:pointer;
+    user-select: none;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    text-decoration:none; 
+    
+}
+.detail-button:hover{
+    color:#4FC3F7;
+}
+.image-credit{
+    color:white;
+    text-align:center;
+    margin-bottom:30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

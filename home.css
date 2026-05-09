@@ -1,0 +1,150 @@
+nav {
+  color: white;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(21, 101, 192, 0.9),
+    rgba(21, 101, 192, 0.6),
+    rgba(21, 101, 192, 0)
+  );
+
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    font-size: 25px;
+    padding: 15px 10%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+
+    line-height: normal;
+}
+.logo {
+    color: white;
+    font-size: 40px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin-left:20px;
+
+}
+nav ul{
+  display: flex;
+  gap:60px;
+  list-style:none;
+  align-items:center;
+  height:100%;
+}
+nav a{
+  display: flex;
+  color:white;
+  text-decoration: none;
+  position:right;
+  align-items:center;
+}
+nav a:hover {
+    color:#4FC3F7; 
+}
+body {
+    margin: 0;
+    animation-name: slideIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+}
+.col-auto{
+    color:black;
+}
+.login-btn {
+    background-color: #ffffff; 
+    color: #000000;              
+    padding: 12px 15px;
+    border-radius: 25px;         
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: 0.3s;
+}
+.hero {
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background-image:url('image/bluetear_image_3.webp');
+  background-position: center;
+  background-size:cover;
+}
+.overlay{
+  display: flex;
+  flex-direction: column;  
+  align-items: center
+}
+.overlay h1{
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color:white;
+  text-align:center;
+  font-size:90px;
+}
+.overlay p{
+  font-size:40px;
+  color:white;
+  text-align:center;
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.Click-btn{
+  background: white;
+  color: black;
+
+  padding: 10px 20px;
+  font-size: 35px;
+
+  border-radius: 20px;
+  text-decoration: none;
+
+  display: inline-block;  
+  margin-top: 25px;        
+
+  transition: 0.3s;
+  margin:auto;
+  font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+h2{
+  color:black;
+}
+.Click-btn:hover {
+    color:#4FC3F7;
+}
+@keyframes slideIn {
+  0% {
+    filter: blur(10px);
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+  100% {
+    filter: blur(0);
+    transform: translateY(0);
+    opacity: 1;
+    scale:1;
+  }
+}
+
+
+
+
+
+
+
+
+
